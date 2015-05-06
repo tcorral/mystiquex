@@ -21,8 +21,8 @@ exports.mystiquex = {
             "test/generated/repos/airbnb/javascript": source
         };
         mystiquex.getResolver(source, decEndpoint)
-            .then(function (resolver){
-                test.equal(resolver, resolvers.FS);
+            .then(function (data){
+                test.equal(data.resolver, resolvers.FS);
                 test.done();
             });
     },
@@ -34,9 +34,8 @@ exports.mystiquex = {
         var absolutePath = path.join(process.cwd(), source, '.svn');
         mkdirp(absolutePath, function (){
             mystiquex.getResolver(source, decEndpoint)
-                .then(function (resolver){
-                    console.log(resolver);
-                    test.equal(resolver, resolvers['SVN-FS']);
+                .then(function (data){
+                    test.equal(data.resolver, resolvers['SVN-FS']);
                     test.done();
                 });
         });
@@ -50,8 +49,8 @@ exports.mystiquex = {
         var absolutePath = path.join(process.cwd(), source, '.git');
         mkdirp(absolutePath, function (){
             mystiquex.getResolver(source, decEndpoint)
-                .then(function (resolver){
-                    test.equal(resolver, resolvers['GIT-FS']);
+                .then(function (data){
+                    test.equal(data.resolver, resolvers['GIT-FS']);
                     test.done();
                 });
         });
@@ -62,8 +61,8 @@ exports.mystiquex = {
             "test/generated/repos/tcorral/coffee" : source
         };
         mystiquex.getResolver(source, decEndpoint)
-            .then(function (resolver){
-                test.equal(resolver, resolvers.GIT);
+            .then(function (data){
+                test.equal(data.resolver, resolvers.GIT);
                 test.done();
             });
     },
@@ -73,8 +72,8 @@ exports.mystiquex = {
             "test/generated/repos/tcorral/svn-repo" : source
         };
         mystiquex.getResolver(source, decEndpoint)
-            .then(function (resolver){
-                test.equal(resolver, resolvers.SVN);
+            .then(function (data){
+                test.equal(data.resolver, resolvers.SVN);
                 test.done();
             });
 
@@ -85,8 +84,8 @@ exports.mystiquex = {
             "test/generated/repos/tcorral/ddpp" : source
         };
         mystiquex.getResolver(source, decEndpoint)
-            .then(function (resolver){
-                test.equal(resolver, resolvers.GITHUB);
+            .then(function (data){
+                test.equal(data.resolver, resolvers.GITHUB);
                 test.done();
             });
     },
@@ -96,8 +95,8 @@ exports.mystiquex = {
             "test/generated/repos/tcorral/ddpp" : source
         };
         mystiquex.getResolver(source, decEndpoint)
-            .then(function (resolver){
-                test.equal(resolver, resolvers.URL);
+            .then(function (data){
+                test.equal(data.resolver, resolvers.URL);
                 test.done();
             });
     }

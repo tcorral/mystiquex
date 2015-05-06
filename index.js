@@ -11,8 +11,11 @@ Mystiquex.prototype = {
                 'the endpoint object to resolve the repo type.');
         }
         getRepoType(src, decEndpoint)
-            .then(function (resolverName, decEndpoint){
-                deferred.resolve(resolvers[resolverName], decEndpoint);
+            .then(function (data){
+                deferred.resolve({
+                    resolver: resolvers[data.name],
+                    endpoint: data.endpoint
+                });
             })
             .fail(function (er){
                 deferred.reject(er);

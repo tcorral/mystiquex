@@ -1,6 +1,6 @@
 {
   "name": "mystiquex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tool to manage and download different source endpoints",
   "main": "index.js",
   "directories": {
