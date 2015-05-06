@@ -1,9 +1,7 @@
 'use strict';
 
-var grunt = require('grunt');
 var resolvers = require('../lib/resolvers');
 var path = require('path');
-var cwd = process.cwd();
 var fs = require('fs');
 var mystiquex = require('../');
 var mkdirp = require('mkdirp');
