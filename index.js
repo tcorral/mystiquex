@@ -1,6 +1,8 @@
 var getRepoType = require('./lib/utils/getRepoType');
 var resolvers = require('./lib/resolvers');
 var Q = require('q');
+var killOnExit = require('./lib/utils/killOnExit');
+killOnExit.startHandlers();
 
 var Mystiquex = function (){};
 Mystiquex.prototype = {
