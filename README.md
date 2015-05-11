@@ -48,7 +48,6 @@ mystiquex.getResolver(source, decEndpoint)
     });
 ```
 ## Resolvers
-==============
 
 ### How the resolvers work:
 The resolvers are classes that extend from the Base.js resolver class.
@@ -148,7 +147,6 @@ It removes the output and error log created in case of any of the commands is a 
 * `void`
 
 ## Tests
-==============
 
 To run the tests with Jasmine:
 
@@ -158,7 +156,6 @@ npm test
 ```
 
 ## Contributing
-==============
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -168,12 +165,10 @@ npm test
 5. Submit a pull request :D
 
 ## History
-==============
 
 0.0.12 - First working commit.
 
 ## License
-==============
 
 The MIT License (MIT)
 
