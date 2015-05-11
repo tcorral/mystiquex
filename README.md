@@ -26,7 +26,6 @@ npm install mystiquex --save
 ```
 
 ## Usage
-==============
 
 ### getResolver
 `mystiquex.getResolver` gets two arguments to be executed:
