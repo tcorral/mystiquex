@@ -1,6 +1,6 @@
 {
   "name": "mystiquex",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Tool to manage and download different source endpoints",
   "main": "index.js",
   "directories": {
@@ -31,6 +31,7 @@
     "junk": "^1.0.1",
     "mkdirp": "^0.5.0",
     "mout": "^0.11.0",
+    "mvn-credentials": "https://github.com/tcorral/mvn-credentials/archive/fix-server-resolution-on-xml-single-server-definition.tar.gz",
     "p-throttler": "^0.1.1",
     "q": "^1.3.0",
     "request": "^2.55.0",
