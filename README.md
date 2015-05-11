@@ -8,7 +8,6 @@
 
 
 # mystiquex
-==============
 
 Never use gitsubmodules anymore, mystiquex allows you to manage and download, if needed, all your repos whatever the endpoint is, it will reach the code for you, it also allows 
 you to execute pre and post commands to complete the build of your projects at once.
