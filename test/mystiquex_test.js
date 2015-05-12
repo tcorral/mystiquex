@@ -78,14 +78,11 @@ exports.mystiquex = {
     },
     AuthRepo: function (test) {
         var source = process.env.AUTH_REPO;
-        var endpoint = { source: source, target: "test/generated/repos/tcorral/auth-repo", "testAuth": "repo.backbase.com" };
+        var endpoint = { source: source, target: "test/generated/repos/tcorral/auth-repo", "testAuth": process.env.REGEX_AUTH };
         mystiquex.getResolver(source, endpoint)
             .then(function (data){
                 test.equal(data.resolver, resolvers.URL);
-                new data.resolver(data.endpoint)
-                    .install(function (){
-                        test.done();
-                    });
+                test.done();
             });
     },
     GitHubRepo: function (test) {

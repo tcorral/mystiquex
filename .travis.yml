@@ -1,4 +1,6 @@
 language: node_js
 node_js:
   - "0.10"
+env:
+  - AUTH_REPO=https://repo.tricky.com/com/tricky/project/0.0.1/name-0.0.1.war REGEX_AUTH=repo.tricky.com
 before_install: npm install -g grunt-cli
